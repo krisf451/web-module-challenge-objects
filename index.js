@@ -151,6 +151,11 @@ function addReview(arr, name, rating, feedback) {
   /*Your Code Here */
 }
 
+console.log(
+  "task 5",
+  addReview([...reviews], "Kristian", 69, "Cool story bro...")
+);
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
 
@@ -162,10 +167,12 @@ Use the getReviewByIndex function below to do the following:
 */
 
 // 2 parameters = array, number
-function getReviewByIndex(/*Your code here*/) {
+function getReviewByIndex(arr, index) {
   /*Your code here*/
+  return `${arr[index].name} gave the restaurant a ${arr[index].rating} star review, and their feedback was: ${arr[index].feedback}`;
   //return the array[number].feedback
 }
+console.log("task 6", getReviewByIndex(reviews, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Write a function to get information about the most recent (last) review called `getLastReview`
